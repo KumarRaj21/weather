@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="./weather.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        <div class="box1">
+            <div class="weatherdetails">
+                <div class="box1-1">
+                <img src="./images/rain.png" class="icons" >
+            <h4 id="weather-cloud"></h4>
+            <h4 class="city" id="city-name"></h4>
+            </div>
+            <div class="details1">
+                <h1 class="tem" id="temp-value">°F</h1>
+                <input type="text" placeholder="enter the location" id="city-input" value="new delhi"/>
+                <button onclick=weather()> search</button>
+                <h4>TimeZone</h4>
+                <p id="timezone-value"></p>
+            </div>
+            </div>
+        </div>
+        <div class="title">
+            <h1>Weather</h1>
+        </div>
+        <div class="box2">
+            <div class="box2-1">
+            <div class="box2-1-1">
+                <img src="./images/humidity.png" class="icons2">
+            <p>Humidity</p>
+            <h3 id="humidity-value"></h3>
+            </div>
+            <div class="box2-1-2">
+                <img src="./images/clouds.png" class="icons2">
+            <p>Air Pressure</p>
+            <h3 id="airpressure-value">PS</h3>
+            </div>
+            <div class="box2-1-3">
+                <img src="./images/wind.png" class="icons2">
+            <p>Wind Speed</p>
+            <h3 id="wind-value"></h3>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./weather.js"></script>
+</html>
